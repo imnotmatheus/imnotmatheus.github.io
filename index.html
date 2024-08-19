@@ -1,12 +1,83 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>matheus punto dev punto ar</title>
-    </head>
-    <body>
-        <p>Hello World!</p>
-        <p>This is my personal webpage</p>
-        <br>
-        <p>This an edition for testing git</p>
-    </body>
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Reguta Kulik</title>
+    <script defer>
+        const text = "Matheus Reguta Kulik";
+        const speed = 100;
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("typewriter").textContent += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        window.onload = typeWriter;
+    </script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-image: url('img-background.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .box {
+            background-color: rgba(0, 0, 0, 0.377);
+            padding: 20px;
+            margin-top: 100px;
+            margin-left: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .box h1 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+            color: beige;
+        }
+
+        .box a {
+            text-decoration: none;
+            color: beige;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .box a:hover {
+            text-decoration: underline;
+        }
+
+        .blinking-cursor {
+            color: beige;
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            from, to { color: transparent; }
+            50% { color: beige; }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1><span id="typewriter"></span><span class="blinking-cursor">|</span></h1>
+        <a href="portfolio.html">Portfolio Dev</a>
+        <a href="paginapessoal.html">Página Personal</a>
+        <a href="mailto:example@example.com">email</a>
+    </div>
+</body>
 </html>
