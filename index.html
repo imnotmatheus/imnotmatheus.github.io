@@ -4,81 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>matheus punto dev punto ar</title>
-    <script defer>
-        const text = "matheus reguta kulik";
-        const speed = 100;
-        let index = 0;
-
-        function typeWriter() {
-            if (index < text.length) {
-                document.getElementById("typewriter").textContent += text.charAt(index);
-                index++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-
-        window.onload = typeWriter;
-    </script>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        body {
-            background-image: url('images/img-background.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: start;
-            align-items: start;
-        }
-
-        .box {
-            background-color: rgba(0, 0, 0, 0.377);
-            padding: 20px;
-            margin-top: 150px;
-            margin-left: 300px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .box h1 {
-            margin: 0 0 10px 0;
-            font-size: 24px;
-            color: beige;
-        }
-
-        .box a {
-            padding-right: 160px;
-            text-decoration: none;
-            color: beige;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .box a:hover {
-            text-decoration: underline;
-        }
-
-        .blinking-cursor {
-            color: beige;
-            animation: blink 1s step-end infinite;
-        }
-
-        @keyframes blink {
-            from, to { color: transparent; }
-            50% { color: beige; }
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="box">
-        <h1><span id="typewriter"></span><span class="blinking-cursor">|</span></h1>
-        <a href="#">portfolio dev</a>
-        <a href="#">página personal</a>
-        <a href="#">email</a>
+    <div class="menu">
+        <h1><span id="typewriter"></span><span class="blinking-cursor">▌</span></h1>
+        
+        <div class="menu-item" data-target="dev-submenu">dev</div>
+
+        <div class="menu-item" data-target="musica-submenu">musica</div>
+
+        <div class="menu-item" data-target="contacto-submenu">contacto</div>
+        
     </div>
+    
+    <div id="dev-submenu" class="submenu">
+        <h1>/dev</h1>
+        <a href="#">portfolio</a>
+        <a href="https://github.com/imnotmatheus">github</a>
+    </div>
+    <div id="musica-submenu" class="submenu">
+        <h1>/musica</h1>
+        <a href="#">composiciones</a>
+        <a href="https://www.youtube.com/@MatheusKulik">youtube</a>
+        <a href="#">soundcloud</a>
+    </div>
+    <div id="contacto-submenu" class="submenu">
+        <h1>/contacto</h1>
+        <a href="mailto:matheus.f.reguta@gmail.com">email</a>
+        <a href="https://www.linkedin.com/in/matheus-fellipe-reguta/">linkedin</a>
+        <a href="https://tilde.zone/@mathek">mastodon</a>
+        <a href="#">sitio personal</a>
+    </div>
+
+    <script src="scripts/typewriter.js"></script>
+    <script src="scripts/submenu.js"></script>
 </body>
 </html>
