@@ -7,36 +7,37 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    
     <div class="menu">
         <h1><span id="typewriter"></span><span class="blinking-cursor">▌</span></h1>
-        
-        <div class="menu-item" data-target="dev-submenu">dev</div>
-
-        <div class="menu-item" data-target="musica-submenu">musica</div>
-
-        <div class="menu-item" data-target="contacto-submenu">contacto</div>
+        <!--dev-->
+        <div class="menu-item" data-target="dev-submenu" id="dev">dev</div>
+        <div id="dev-submenu" class="submenu">
+            <h1>/dev</h1>
+            <a href="#">portfolio</a>
+            <a href="https://github.com/imnotmatheus">github</a>
+        </div>
+        <!--musica-->
+        <div class="menu-item" data-target="musica-submenu" id="musica">musica</div>
+        <div id="musica-submenu" class="submenu">
+            <h1>/musica</h1>
+            <a href="#">composiciones</a>
+            <a href="https://www.youtube.com/@MatheusKulik">youtube</a>
+            <a href="#">soundcloud</a>
+        </div>
+        <!--contacto-->
+        <div class="menu-item" data-target="contacto-submenu" id="contacto">contacto</div>
+        <div id="contacto-submenu" class="submenu">
+            <h1>/contacto</h1>
+            <a href="mailto:matheus.f.reguta@gmail.com">email</a>
+            <a href="https://www.linkedin.com/in/matheus-fellipe-reguta/">linkedin</a>
+            <a href="https://tilde.zone/@mathek">mastodon</a>
+            <a href="#">sitio personal</a>
+            
+        </div>
         
     </div>
     
-    <div id="dev-submenu" class="submenu">
-        <h1>/dev</h1>
-        <a href="#">portfolio</a>
-        <a href="https://github.com/imnotmatheus">github</a>
-    </div>
-    <div id="musica-submenu" class="submenu">
-        <h1>/musica</h1>
-        <a href="#">composiciones</a>
-        <a href="https://www.youtube.com/@MatheusKulik">youtube</a>
-        <a href="#">soundcloud</a>
-    </div>
-    <div id="contacto-submenu" class="submenu">
-        <h1>/contacto</h1>
-        <a href="mailto:matheus.f.reguta@gmail.com">email</a>
-        <a href="https://www.linkedin.com/in/matheus-fellipe-reguta/">linkedin</a>
-        <a href="https://tilde.zone/@mathek">mastodon</a>
-        <a href="#">sitio personal</a>
-    </div>
-
     <script src="scripts/typewriter.js"></script>
     <script src="scripts/submenu.js"></script>
 </body>

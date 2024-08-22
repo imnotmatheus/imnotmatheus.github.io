@@ -1,46 +1,42 @@
-body, html {
+body,
+html {
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
 }
 
 body {
+    font-family: 'Courier New', Courier, monospace;
     background-image: url('../images/img-background.jpg');
-    background-size: cover;
+    background-color: #000000;
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    margin-bottom: 0px;
     display: flex;
     justify-content: start;
     align-items: start;
 }
 
-.mark {
-    background-color: transparent;
-}
-
-.mark:hover {
-    color: black;
-    background-color: beige;
-}
-
 .menu {
     background-color: rgba(0, 0, 0, 0.45);
-    width: 305px;
-    height: 110px;
-    padding: 20px; 
-    margin-top: 150px;
-    margin-left: 300px;
+    min-width: 19rem;
+    min-height: 5rem;
+    padding: 1.5rem;
+    margin-top: 5%;
+    margin-left: 15%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .menu h1 {
     margin: 0 0 0 0;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: beige;
 }
 
 .menu-item {
-    margin: 5px 0;
+    margin: 0.2rem 0;
     cursor: pointer;
     color: beige;
 }
@@ -49,34 +45,63 @@ body {
     color: black;
     background-color: beige;
 }
-
-.submenu {
-    display: none;
-    width: 140px;
-    height: 110px;
-    background-color: rgba(0, 0, 0, 0.45);
-    padding: 20px;
-    margin-top: 150px;
-    margin-left: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+@media (min-width: 769px) {
+    .submenu {
+        display: none;
+        min-width: 10.5rem;
+        min-height: 7rem;
+        background-color: rgba(0, 0, 0, 0.45);
+        padding: 1.5rem;
+        margin-left: 1%;
+        margin-top: 5%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    }
+    
+    .submenu h1 {
+        margin: 0 0 0 0;
+        font-size: 1.2rem;
+        color: beige;
+    }
+    
+    .submenu a {
+        text-decoration: none;
+        color: beige;
+        display: block;
+        margin: 0.2rem 0;
+    }
+    
+    .submenu a:hover {
+        color: black;
+        background-color: beige;
+    }
 }
 
-.submenu h1 {
-    margin: 0 0 0 0;
-    font-size: 18px;
-    color: beige;
-}
 
-.submenu a {
-    text-decoration: none;
-    color: beige;
-    display: block;
-    margin: 5px 0;
-}
+/*Estilo para celulares*/
+@media (max-width: 768px) {
+    .submenu {
+        display: none;
+    }
 
-.submenu a:hover {
-    color: black;
-    background-color: beige;
+    .submenu h1 {
+        display: none;
+    }
+
+    .submenu a {
+        text-decoration: none;
+        color: beige;
+        display: block;
+        margin: 0.2rem 0;
+    }
+
+    .submenu a::before {
+        content: " - ";
+    }
+
+    .submenu a:hover {
+        color: black;
+        background-color: beige;
+    }
 }
 
 .blinking-cursor {
@@ -85,6 +110,13 @@ body {
 }
 
 @keyframes blink {
-    from, to { color: transparent; }
-    50% { color: beige; }
+
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: beige;
+    }
 }

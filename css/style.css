@@ -1,0 +1,90 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-image: url('../images/img-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.mark {
+    background-color: transparent;
+}
+
+.mark:hover {
+    color: black;
+    background-color: beige;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 305px;
+    height: 110px;
+    padding: 20px; 
+    margin-top: 150px;
+    margin-left: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.menu h1 {
+    margin: 0 0 0 0;
+    font-size: 24px;
+    color: beige;
+}
+
+.menu-item {
+    margin: 5px 0;
+    cursor: pointer;
+    color: beige;
+}
+
+.menu-item:hover {
+    color: black;
+    background-color: beige;
+}
+
+.submenu {
+    display: none;
+    width: 140px;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+    margin-top: 150px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.submenu h1 {
+    margin: 0 0 0 0;
+    font-size: 18px;
+    color: beige;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: beige;
+    display: block;
+    margin: 5px 0;
+}
+
+.submenu a:hover {
+    color: black;
+    background-color: beige;
+}
+
+.blinking-cursor {
+    color: beige;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { color: transparent; }
+    50% { color: beige; }
+}
