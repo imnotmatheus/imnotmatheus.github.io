@@ -19,33 +19,35 @@ body {
     align-items: start;
 }
 
-.menu {
-    background-color: rgba(0, 0, 0, 0.45);
-    min-width: 19rem;
-    min-height: 5rem;
-    padding: 1.5rem;
-    margin-top: 5%;
-    margin-left: 15%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-}
 
-.menu h1 {
-    margin: 0 0 0 0;
-    font-size: 1.5rem;
-    color: beige;
-}
-
-.menu-item {
-    margin: 0.2rem 0;
-    cursor: pointer;
-    color: beige;
-}
-
-.menu-item:hover {
-    color: black;
-    background-color: beige;
-}
 @media (min-width: 769px) {
+    .menu {
+        background-color: rgba(0, 0, 0, 0.45);
+        min-width: 19rem;
+        min-height: 5rem;
+        padding: 1.5rem;
+        margin-top: 5%;
+        margin-left: 15%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .menu h1 {
+        margin: 0 0 0 0;
+        font-size: 1.5rem;
+        color: beige;
+    }
+
+    .menu-item {
+        margin: 0.2rem 0;
+        cursor: pointer;
+        color: beige;
+    }
+
+    .menu-item:hover {
+        color: black;
+        background-color: beige;
+    }
+
     .submenu {
         display: none;
         min-width: 10.5rem;
@@ -56,20 +58,20 @@ body {
         margin-top: 5%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     }
-    
+
     .submenu h1 {
         margin: 0 0 0 0;
         font-size: 1.2rem;
         color: beige;
     }
-    
+
     .submenu a {
         text-decoration: none;
         color: beige;
         display: block;
         margin: 0.2rem 0;
     }
-    
+
     .submenu a:hover {
         color: black;
         background-color: beige;
@@ -79,6 +81,35 @@ body {
 
 /*Estilo para celulares*/
 @media (max-width: 768px) {
+    .menu {
+        background-color: rgba(0, 0, 0, 0.45);
+        max-width: 70%;
+        min-height: 20%;
+        padding: 1rem;
+        margin-top: 30%;
+        margin-left: 15%;
+        margin-right: 15%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .menu h1 {
+        margin: 0 0 0 0;
+        font-size: 1rem;
+        color: beige;
+    }
+
+    .menu-item {
+        font-size: 0.8rem;
+        margin: 0.2rem 0;
+        cursor: pointer;
+        color: beige;
+    }
+
+    .menu-item:hover {
+        color: black;
+        background-color: beige;
+    }
+
     .submenu {
         display: none;
     }
@@ -92,6 +123,7 @@ body {
         color: beige;
         display: block;
         margin: 0.2rem 0;
+        font-size: 0.8rem;
     }
 
     .submenu a::before {
