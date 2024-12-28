@@ -71,6 +71,11 @@ body {
     margin: 0.2rem 0;
 }
 
+.contenedor a:hover {
+    color: black;
+    background-color: beige;
+}
+
 .contenedor p {
     color: beige;
     letter-spacing: -0.1;
@@ -91,17 +96,8 @@ body {
     display: none;
 }
 
-.submenu h1 {
-    display: none;
-}
-
 .submenu a::before {
     content: " - ";
-}
-
-.submenu a:hover {
-    color: black;
-    background-color: beige;
 }
 
 .link-contenido {
