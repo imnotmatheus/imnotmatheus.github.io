@@ -7,38 +7,60 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <div class="contenedor">
+        <div class="contenido" id="menu">
+            <h1><span id="typewriter"></span><span class="blinking-cursor">▌</span></h1>
+            <!--dev-->
+            <div class="menu-item" data-target="dev-submenu" id="dev">dev</div>
+            <div id="dev-submenu" class="submenu">
+                <h1>/dev</h1>
+                <div class="link-contenido" data-target="portfolio" id="link-portfolio">portfolio</div>
+                <a href="https://github.com/imnotmatheus">github</a>
+            </div>
+            <!--contacto-->
+            <div class="menu-item" data-target="contacto-submenu" id="contacto">contacto</div>
+            <div id="contacto-submenu" class="submenu">
+                <h1>/contacto</h1>
+                <a href="mailto:matheus.f.reguta@gmail.com">email</a>
+                <a href="https://www.linkedin.com/in/matheus-fellipe-reguta/">linkedin</a>
+                
+            </div>
+            <!--outros-->
+            <div class="menu-item" data-target="otros-submenu" id="otros">otros</div>
+            <div id="otros-submenu" class="submenu">
+                <h1>/otros</h1>
+                <a href="#">sitio personal</a>
+                <a href="https://tilde.zone/@mathek">mastodon</a>
+                <a href="https://www.youtube.com/@MatheusKulik">youtube</a>
+            </div>
+        </div>
+        <div class="contenido" id="portfolio">
+            <h1>portfolio</h1>
+            <div class="link-contenido" data-target="menu" id="link-menu">menu</div>
+            <div id="project1">
+                <h2>Weather Dashboard Application</h2>
+                <img src="images/placeholder.jpg" alt="Weather Dashboard screenshot">
+                <p>A responsive weather dashboard that displays current weather conditions and 5-day forecast for any city. Built using weather API integration and modern web technologies.</p>
+            </div>
     
-    <div class="menu">
-        <h1><span id="typewriter"></span><span class="blinking-cursor">▌</span></h1>
-        <!--dev-->
-        <div class="menu-item" data-target="dev-submenu" id="dev">dev</div>
-        <div id="dev-submenu" class="submenu">
-            <h1>/dev</h1>
-            <a href="#">portfolio</a>
-            <a href="https://github.com/imnotmatheus">github</a>
+            <div id="project2">
+                <h2>E-commerce Website Redesign</h2>
+                <img src="images/placeholder.jpg" alt="E-commerce website screenshot"">
+                <p>Complete redesign of an e-commerce platform focusing on user experience and mobile responsiveness. Increased conversion rates by 25%.</p>
+            </div>
+    
+            <div id="project3">
+                <h2>Task Management System</h2>
+                <img src="images/placeholder.jpg" alt="Task management app screenshot">
+                <p>A collaborative task management system with real-time updates, user authentication, and project tracking capabilities.</p>
+            </div>
         </div>
-        <!--contacto-->
-        <div class="menu-item" data-target="contacto-submenu" id="contacto">contacto</div>
-        <div id="contacto-submenu" class="submenu">
-            <h1>/contacto</h1>
-            <a href="mailto:matheus.f.reguta@gmail.com">email</a>
-            <a href="https://www.linkedin.com/in/matheus-fellipe-reguta/">linkedin</a>
-            
-        </div>
-        <!--outros-->
-        <div class="menu-item" data-target="otros-submenu" id="otros">otros</div>
-        <div id="otros-submenu" class="submenu">
-            <h1>/otros</h1>
-            <a href="#">sitio personal</a>
-            <a href="https://tilde.zone/@mathek">mastodon</a>
-            <a href="https://www.youtube.com/@MatheusKulik">youtube</a>
-            
-        </div>
-        
         
     </div>
     
+    
     <script src="scripts/typewriter.js"></script>
     <script src="scripts/submenu.js"></script>
+    <script src="scripts/portfolio.js"></script>
 </body>
 </html>
