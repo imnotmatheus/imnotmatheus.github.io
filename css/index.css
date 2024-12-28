@@ -29,55 +29,6 @@ body {
         margin-left: 15%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     }
-
-    .menu h1 {
-        margin: 0 0 0 0;
-        font-size: 1.5rem;
-        color: beige;
-    }
-
-    .menu-item {
-        margin: 0.2rem 0;
-        cursor: pointer;
-        color: beige;
-    }
-
-    .menu-item:hover {
-        color: black;
-        background-color: beige;
-    }
-
-    .submenu {
-        display: none;
-        min-width: 10.5rem;
-        min-height: 7rem;
-        background-color: rgba(0, 0, 0, 0.45);
-        padding: 1.5rem;
-        margin-left: 1%;
-        margin-top: 5%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    }
-
-
-    .submenu h1 {
-        margin: 0 0 0 0;
-        font-size: 1.2rem;
-        color: beige;
-    }
-
-
-    .submenu a {
-        text-decoration: none;
-        color: beige;
-        display: block;
-        margin: 0.2rem 0;
-    }
-
-
-    .submenu a:hover {
-        color: black;
-        background-color: beige;
-    }
 }
 
 
@@ -93,48 +44,49 @@ body {
         top: 30vh;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     }
-
-    .menu h1 {
-        margin: 0 0 0 0;
-        font-size: 1.2rem;
-        color: beige;
-    }
-
-    .menu-item {
-        margin: 0.2rem 0;
-        cursor: pointer;
-        color: beige;
-    }
-
-    .menu-item:hover {
-        color: black;
-        background-color: beige;
-    }
-
-    .submenu {
-        display: none;
-    }
-
-    .submenu h1 {
-        display: none;
-    }
-
-    .submenu a {
-        text-decoration: none;
-        color: beige;
-        display: block;
-        margin: 0.2rem 0;
-    }
-
-    .submenu a::before {
-        content: " - ";
-    }
-
-    .submenu a:hover {
-        color: black;
-        background-color: beige;
-    }
 }
+
+.menu h1 {
+    margin: 0 0 0 0;
+    font-size: 1.2rem;
+    color: beige;
+}
+
+.menu-item {
+    margin: 0.2rem 0;
+    cursor: pointer;
+    color: beige;
+}
+
+.menu-item:hover {
+    color: black;
+    background-color: beige;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu h1 {
+    display: none;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: beige;
+    display: block;
+    margin: 0.2rem 0;
+}
+
+.submenu a::before {
+    content: " - ";
+}
+
+.submenu a:hover {
+    color: black;
+    background-color: beige;
+}
+
 
 .blinking-cursor {
     color: beige;
