@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'courier new', monospace;
     background-image: url('../images/img-background.jpg');
     background-color: #000000;
     background-repeat: no-repeat;
@@ -20,36 +20,60 @@ body {
 }
 
 @media (min-width: 769px) {
-    .menu {
-        background-color: rgba(0, 0, 0, 0.45);
+    .contenedor {
+        background-color: rgba(0, 0, 0, 0.7);
         min-width: 19rem;
+        max-width: 70%;
         min-height: 5rem;
+        max-height: 70%;
         padding: 1.5rem;
         margin-top: 5%;
-        margin-left: 15%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        margin-left: 12.5%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        overflow-y: auto;
+        scrollbar-color: beige black;
+        scrollbar-width: thin;
     }
 }
 
 
 /*Estilo para celulares*/
 @media (max-width: 768px) {
-    .menu {
-        background-color: rgba(0, 0, 0, 0.45);
+    .contenedor {
+        background-color: rgba(0, 0, 0, 0.7);
         width: 70%;
         min-height: 5rem;
+        max-height: 70%;
         padding: 1rem;
+        top: 10%;
         margin: 0 auto;
         position: relative;
-        top: 30vh;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        overflow-y: auto;
     }
 }
 
-.menu h1 {
+.contenedor h1 {
     margin: 0 0 0 0;
     font-size: 1.2rem;
     color: beige;
+}
+
+.contenedor h2 {
+    font-size: 1.1rem;
+    color: beige;
+}
+
+.contenedor a {
+    text-decoration: none;
+    color: beige;
+    display: block;
+    margin: 0.2rem 0;
+}
+
+.contenedor p {
+    color: beige;
+    letter-spacing: -0.1;
 }
 
 .menu-item {
@@ -71,13 +95,6 @@ body {
     display: none;
 }
 
-.submenu a {
-    text-decoration: none;
-    color: beige;
-    display: block;
-    margin: 0.2rem 0;
-}
-
 .submenu a::before {
     content: " - ";
 }
@@ -87,6 +104,37 @@ body {
     background-color: beige;
 }
 
+.link-contenido {
+    text-decoration: none;
+    color: beige;
+    display: block;
+    margin: 0.2rem 0;
+}
+
+.link-contenido::before {
+    content: " - ";
+}
+
+.link-contenido#link-menu::before {
+    content: "⮌ ";
+}
+
+.link-contenido:hover {
+    color: black;
+    background-color: beige;
+    cursor: pointer;
+}
+
+.contenido#portfolio {
+    display: none;
+    padding: auto;
+}
+
+.contenido img {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+}
 
 .blinking-cursor {
     color: beige;
