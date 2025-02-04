@@ -1,4 +1,4 @@
-const text = "matheus reguta kulik";
+const text = "matheus reguta";
         const speed = 50;
         let index = 0;
 
