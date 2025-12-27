@@ -64,11 +64,16 @@ body {
 
 h1 {
     margin: 0 0 0 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: beige;
 }
 
 h2 {
+    font-size: 1.2rem;
+    color: beige;
+}
+
+h3 {
     font-size: 1.1rem;
     color: beige;
 }
@@ -76,10 +81,11 @@ h2 {
 a {
     text-decoration: none;
     color: beige;
-    display: block;
-    margin: 0.2rem 0;
 }
 
+li {
+    color: beige;
+}
 
 .menu-item {
     margin: 0.2rem 0;
@@ -129,6 +135,24 @@ a {
         width: 70%;
         height: auto;
         margin-left: 15%;
+    }
+
+    a {
+        text-decoration: underline;
+        display: inline;
+    }
+
+    details > summary {
+        list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .projectTitle:hover {
+        color: black;
+        background-color: beige;
+        cursor: pointer;
     }
 }
 

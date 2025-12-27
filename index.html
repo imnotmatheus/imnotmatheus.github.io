@@ -14,7 +14,7 @@
             <!--dev-->
             <div class="menu-item" data-target="dev-submenu" id="dev">dev</div>
             <div id="dev-submenu" class="submenu">
-                <div class="link-contenido" data-target="portfolio" id="link-portfolio">portfolio</div>
+                <div class="link-contenido" data-target="portfolio" id="link-portfolio">projects</div>
                 <a href="https://github.com/imnotmatheus">github</a>
             </div>
 
@@ -32,14 +32,38 @@
         </div>
         
         <div class="contenido" id="portfolio">
-            <h1>portfolio</h1>
+            <h1>projects</h1>
             <div class="link-contenido" data-target="menu" id="link-menu">menu</div>
     
             <div id="project1">
-                <h2><a href="https://matheuskulik.netlify.app" target="_blank">Personal website</a></h2>
-                <img src="images/sitepessoal.png" alt="E-commerce website screenshot">
-                <p>My personal static website</p>
-                <p>Used tools: pure (no framework) html, CSS and JS</p>
+                <details>
+                    <summary>
+                        <h2 class="projectTitle">Personal website</h2>
+                    </summary>
+                    <img src="images/sitepessoal.png" alt="Personal website screenshot">
+                    <p><a href="https://matheuskulik.netlify.app" target="_blank">My personal static website</a></p>
+                    <p>Used tools: pure (no framework) html, CSS and JS</p>
+                </details>
+            </div>
+
+            <div id="project2">
+                <details>
+                    <summary>
+                    <h2 class="projectTitle">Home server</h2>
+                    </summary>
+
+                    <p>As a small personal experiment I started a home server. I'm using an old (10+ years) machine that was lying around. Here's a list of implemented and projected features:</p>
+                    <h3>Implemented</h3>
+                    <ul>
+                        <li><p><a href="https://github.com/airsonic-advanced/airsonic-advanced">Airsonic Advanced server</a> for private streaming of my music library</p></li>
+                    </ul>
+                    <h3>Planned</h3>
+                    <ul>
+                        <li>Jellyfinn or similar for private streaming of my movie/series library</li>
+                        <li>Hosting more properly my own music compositions</li>
+                        <li>A self hosted keepass, vaultwarden or similar instance</li>
+                    </ul>
+                </details>
             </div>
         </div>
         
