@@ -39,11 +39,6 @@ body {
         color: beige;
     }
     
-    h2 {
-        font-size: 1.1rem;
-        color: beige;
-    }
-    
     a {
         text-decoration: none;
         color: beige;
@@ -68,93 +63,28 @@ h1 {
     color: beige;
 }
 
-h2 {
-    font-size: 1.2rem;
-    color: beige;
-}
-
-h3 {
-    font-size: 1.1rem;
-    color: beige;
-}
-
 a {
     text-decoration: none;
     color: beige;
 }
 
+ul {
+    padding-left: 0;
+}
+
 li {
+    list-style: none;
     color: beige;
-}
-
-.menu-item {
-    margin: 0.2rem 0;
-    cursor: pointer;
-    color: beige;
-}
-
-.menu-item:hover {
-    color: black;
-    background-color: beige;
 }
 
 .submenu {
-    display: none;
+    display: block;
 
     a::before {
         content: " - ";
     }
 }
 
-.link-contenido {
-    text-decoration: none;
-    color: beige;
-    display: block;
-    margin: 0.2rem 0;
-}
-
-.link-contenido::before {
-    content: " - ";
-}
-
-.link-contenido#link-menu::before {
-    content: "⮌ ";
-}
-
-.link-contenido:hover {
-    color: black;
-    background-color: beige;
-    cursor: pointer;
-}
-
-.contenido#portfolio {
-    display: none;
-    padding: auto;
-
-    img {
-        width: 70%;
-        height: auto;
-        margin-left: 15%;
-    }
-
-    a {
-        text-decoration: underline;
-        display: inline;
-    }
-
-    details > summary {
-        list-style: none;
-    }
-    details > summary::-webkit-details-marker {
-        display: none;
-    }
-
-    .projectTitle:hover {
-        color: black;
-        background-color: beige;
-        cursor: pointer;
-    }
-}
 
 .blinking-cursor {
     color: beige;
@@ -171,4 +101,8 @@ li {
     50% {
         color: beige;
     }
+}
+
+.no-show {
+    display: none;
 }
